@@ -42,7 +42,7 @@ public class Qes1_13 {
 		d = 0L;
 		e =  0.0f;
 		f = 0.0d;
-		ch = 0000;
+		ch = '\u0000';
 		str = null;
 		data = false;
 		
@@ -187,7 +187,7 @@ public class Qes1_13 {
 		
 		//11で変換した【年齢・身長】を整数型に変換して出力してください
 		int num1 = Integer.parseInt(str1);
-		int num2 = (int)f;
+		int num2 = (int) Double.parseDouble(Double.toString(e));
 		System.out.println("年齢=" + num1 + "歳");
 		System.out.println("身長=" + num2 + "cm");
 		
