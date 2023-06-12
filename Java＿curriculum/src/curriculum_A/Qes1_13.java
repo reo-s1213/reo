@@ -129,10 +129,10 @@ public class Qes1_13 {
 		age = 24;
 		height = 168.5d;
 		weight = 64.2f;
-		System.out.println( "初めまして"+ name +"です" );
-		System.out.println( "年齢は"+ age +"歳です" );
-		System.out.println( "身長は"+ height +"cmです" );
-		System.out.println( "体重は"+ weight +"kgです" );
+		System.out.println( "初めまして" + name +"です" );
+		System.out.println( "年齢は" + age +"歳です" );
+		System.out.println( "身長は" + height +"cmです" );
+		System.out.println( "体重は" + weight +"kgです" );
 		food = "オムライス";
 		System.out.println( "好きな食べ物は" + food + "です" );
 		double bm1 = weight / ( height * height ) * 10000;
@@ -165,7 +165,7 @@ public class Qes1_13 {
 		// 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 		age = 24;
 		data = false;
-		System.out.println(age > 25);
+		System.out.println( age > 25 );
 		
 		/*
 		 *  Qes11 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
@@ -187,7 +187,7 @@ public class Qes1_13 {
 		
 		// 11で変換した【年齢・身長】を整数型に変換して出力してください
 		int num1 = Integer.parseInt( str1 );
-		int num2 = (int) Double.parseDouble( str2 );
+		int num2 = (int)Double.parseDouble( str2 );
 		System.out.println( "年齢=" + num1 + "歳" );
 		System.out.println( "身長=" + num2 + "cm" );
 		
