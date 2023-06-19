@@ -17,27 +17,33 @@ public class Qes1_3 {
 		
 		// コンソールにユーザー名を入力できるようにする
 		Scanner sc1 = new Scanner( System.in );
-		System.out.println( "ユーザー名を入力してください" );
-		String line1 = sc1.nextLine();
+		String username = null;
+		
+		while (true) {
+		 System.out.println( "ユーザー名を入力してください" );
+		 String line1 = sc1.nextLine();
 		
 		// ユーザー名の文字数が0文字以下もしくはnullの場合「名前を入力してください」と出力してください
-		if ( line1 == null || line1.length() <= 0 ) {
+		 if ( line1 == null || line1.length() <= 0 ) {
 			System.out.println( "名前を入力してください" );
-		} 
+		 } 
 		
 		// ユーザー名の文字数が10文字より大きい場合「名前を10文字以内にしてください」と出力してください
-		else if ( line1.length() > 10 ) {
+		 else if ( line1.length() > 10 ) {
 			System.out.println( "名前を10文字以内にしてください" );
-		}
+		 }
 		
 		// ユーザー名が半角英数字以外の場合「半角英数字のみで名前を入力してください」と出力してください
-		else if (!line1.matches( "[a-zA-Z0-9]+" )) {
-			System.out.println( "半額英数字飲みで名前を入力してください" );
-		}
+		 else if (!line1.matches( "[a-zA-Z0-9]+" )) {
+			System.out.println( "半角英数字飲みで名前を入力してください" );
+		 }
 		
 		// ユーザー名が正常な値だった場合「ユーザー名「 入力したユーザー名 」を登録しました」と出力してください
-		else {
+		 else {
+		    username = line1;
 			System.out.println( "ユーザー名「" + line1 + "」を登録しました" );
+			break;
+		 }
 		}
 		
 		
@@ -63,7 +69,7 @@ public class Qes1_3 {
 			int computerHand = ( int )( Math.random() * 3 );
 			
 			
-			System.out.println( line1 + "の手は「" + handToString( playerHand ) + " 」" );
+			System.out.println( username + "の手は「" + handToString( playerHand ) + " 」" );
 			System.out.println( "相手の手は「" + handToString( computerHand ) + "」" );
 			
 			

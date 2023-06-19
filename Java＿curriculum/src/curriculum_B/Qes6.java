@@ -21,7 +21,7 @@ public class Qes6 {
 		 */
 	
 
-
+                //
 		        Scanner scanner = new Scanner( System.in );
 		        Random random = new Random();
 
