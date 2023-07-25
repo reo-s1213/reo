@@ -65,9 +65,8 @@ public class Curriculum_New_1_18 {
 			sum += num;
 		}
 
-		return  (double) sum / numbers.length;
-	
-		
+		return (double) sum / numbers.length;
+
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
@@ -109,13 +108,13 @@ public class Curriculum_New_1_18 {
 
 		// メソッド呼び出し
 		double average = calculateAverage(randomNumbers);
-        System.out.println("平均値：" + average);
+		System.out.println("平均値：" + average);
 
 		//Q7
 
 		// メソッド呼び出し
-        boolean isAbove50 = isCheckAverage(average);
-        System.out.println("平均値が50以上：" + isAbove50);
+		boolean isAbove50 = isCheckAverage(average);
+		System.out.println("平均値が50以上：" + isAbove50);
 
 	}
 }
