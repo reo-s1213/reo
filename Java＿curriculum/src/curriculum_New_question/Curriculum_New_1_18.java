@@ -13,9 +13,12 @@ public class Curriculum_New_1_18 {
 
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 
-	public static int multiply(int a, int b) {
+	public static void multiply(int a, int b) {
 
-		return a * b;
+		int result =a * b;
+		System.out.println("" + result);
+		
+		
 
 	}
 
@@ -31,9 +34,10 @@ public class Curriculum_New_1_18 {
 
 	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
 
-	public static double add(double a, double b) {
+	public static void  multiply(double a, double b) {
 
-		return a + b;
+		double result = a + b;
+		System.out.println("" + result);
 
 	}
 
@@ -86,7 +90,13 @@ public class Curriculum_New_1_18 {
 		// Q2
 
 		// メソッド呼び出し
-		System.out.println(multiply(5, 6));
+		int intValue1 = 5;
+        int intValue2 = 10;
+       
+        // 乗算メソッドを呼び出して整数の乗算結果を表示
+        multiply(intValue1, intValue2); 
+
+      
 
 		// Q3
 
@@ -97,7 +107,10 @@ public class Curriculum_New_1_18 {
 		// Q4
 
 		// メソッド呼び出し
-		System.out.println(add(3.14, 2.71));
+		 double doubleValue1 = 3.5;
+	     double doubleValue2 = 2.2;
+	    // オーバーロードされた和算メソッドを呼び出して少数の和算結果を表示
+	     multiply(doubleValue1, doubleValue2); 
 
 		// Q5
 
