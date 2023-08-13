@@ -2,31 +2,22 @@ package basicClass;
 
 public class Dog {
 	// Q1：フィールドに動物の名前の変数を定義してください。
-	private String name;
+    String name;
 
 	// Q2：フィールドに動物の数の変数を定義してください。
-	private static int count;
+	int count;
 
 	// Q3：Q1で作成した変数に「犬」を代入するコンストラクタを作成してください。
 	public Dog() {
 		this.name = "犬";
-		count++;
+		this.count = 1;
 	}
 
 	// Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
-	public Dog(String name) {
+	public Dog(String name, int count) {
 		this.name = name;
-		count++;
+		this.count = count;
 	}
 
-	// 名前のgetterメソッド
-	public String getName() {
-		return name;
-	}
-
-	// 数のgetterメソッド
-	public static int getCount() {
-		return count;
-	}
 
 }

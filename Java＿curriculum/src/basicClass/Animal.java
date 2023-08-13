@@ -9,10 +9,10 @@ public class Animal {
 
 		// Q1：Dogクラスを呼び出して変数に代入し、動物の名前をコンソールに出力してください。
 		Dog dog = new Dog();
-		System.out.println("動物の名前:" + dog.getName());
+		System.out.println("動物の名前:" + dog.name);
 
 		// Q2：Dogクラスを呼び出して変数に代入し、動物の数をコンソールに出力してください。
-		System.out.println("動物の数:" + Dog.getCount());
+		System.out.println("動物の数:" + dog.count);
 
 		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
 		LocalDateTime dateTime = LocalDateTime.now();
