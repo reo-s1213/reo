@@ -25,21 +25,22 @@ public class Processing {
 		this.defence = generateRandomValue();
 
 	}
+
+	//	サブクラスを設定
 	class subclass {
-		public class Warrior extends Processing{
+		public class Warrior extends Processing {
 			public Warrior(String name) {
 				super(name);
 			}
 		}
-		
-		public class Wizard extends Processing{
+
+		public class Wizard extends Processing {
 			public Wizard(String name) {
 				super(name);
 			}
 		}
 
 	}
-
 
 	//	ランダムな値を生成するメソッド
 	private int generateRandomValue() {
@@ -57,6 +58,5 @@ public class Processing {
 		System.out.println("防御力" + defence);
 		System.out.println("/nさあ冒険に出かけよう!");
 	}
-	
 
 }

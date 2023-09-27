@@ -12,7 +12,7 @@ public class Main {
 		processing.displayInfo();
 		Warrior.displayInfo();
 		Wizard.displayInfo();
-		
+
 	}
 
 }
