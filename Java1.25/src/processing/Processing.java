@@ -56,7 +56,7 @@ public class Processing {
 		System.out.println("攻撃力" + attack);
 		System.out.println("素早さ" + agility);
 		System.out.println("防御力" + defence);
-		System.out.println("/nさあ冒険に出かけよう!");
+		System.out.println("さあ冒険に出かけよう!");
 	}
 
 }
