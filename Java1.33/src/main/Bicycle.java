@@ -1,5 +1,5 @@
 package main;
 
-public class Bicycle extends Vehicle{
+public class Bicycle extends Vehicle {
 
 }
