@@ -6,7 +6,6 @@ class Person {
 	int age;
 	double height;
 	double weight;
-	double bmi = 20.0;
 
 	private static int totalCount = 0;
 
@@ -21,7 +20,8 @@ class Person {
 
 	//	BMIを計算するメソッド
 	double bmi() {
-		return bmi;
+		double calculatedBMI = weight / (height * height);
+		return Math.floor(calculatedBMI * 10) / 10;
 	}
 
 	//	データを表示するメソッド
