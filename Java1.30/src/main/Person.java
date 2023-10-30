@@ -21,7 +21,7 @@ class Person {
 	//	BMIを計算するメソッド
 	double bmi() {
 		double calculatedBMI = weight / (height * height);
-		return Math.floor(calculatedBMI * 10) / 10;
+		return Math.floor(calculatedBMI);
 	}
 
 	//	データを表示するメソッド
